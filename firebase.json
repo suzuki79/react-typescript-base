@@ -1,0 +1,73 @@
+{
+  "hosting": {
+    "public": "out",
+    "cleanUrls": true,
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/workspaces/:workspaceId",
+        "destination": "/workspaces/[workspaceId].html"
+      },
+      {
+        "source": "/workspaces/:workspaceId/members",
+        "destination": "/workspaces/[workspaceId]/members.html"
+      },
+      {
+        "source": "/workspaces/:workspaceId/members/:memberId",
+        "destination": "/workspaces/[workspaceId]/members/[memberId].html"
+      },
+      {
+        "source": "/workspaces/:workspaceId/datasets/:datasetId",
+        "destination": "/workspaces/[workspaceId]/datasets/[datasetId].html"
+      },
+      {
+        "source": "/workspaces/:workspaceId/projects/new",
+        "destination": "/workspaces/[workspaceId]/projects/new.html"
+      },
+      {
+        "source": "/projects/:projectId",
+        "destination": "/projects/[projectId].html"
+      },
+      {
+        "source": "/projects/:projectId/tasks",
+        "destination": "/projects/[projectId]/tasks.html"
+      },
+      {
+        "source": "/projects/:projectId/datasets",
+        "destination": "/projects/[projectId]/datasets.html"
+      },
+      {
+        "source": "/projects/:projectId/outputs",
+        "destination": "/projects/[projectId]/outputs.html"
+      },
+      {
+        "source": "/projects/:projectId/categories",
+        "destination": "/projects/[projectId]/categories.html"
+      },
+      {
+        "source": "/projects/:projectId/settings",
+        "destination": "/projects/[projectId]/settings.html"
+      },
+      {
+        "source": "/projects/:projectId/categories/new",
+        "destination": "/projects/[projectId]/categories/new.html"
+      },
+      {
+        "source": "/projects/:projectId/categories/:categoryId/edit",
+        "destination": "/projects/[projectId]/categories/[categoryId]/edit.html"
+      },
+      {
+        "source": "/annotations/:taskId/:annotationType/input",
+        "destination": "/annotations/[taskId]/[annotationType]/input.html"
+      },
+      {
+        "source": "/annotations/:taskId/:annotationType/review",
+        "destination": "/annotations/[taskId]/[annotationType]/review.html"
+      },
+      {
+        "source": "/annotations/:taskId/:annotationType/confirm",
+        "destination": "/annotations/[taskId]/[annotationType]/confirm.html"
+      }
+    ]
+  }
+}
