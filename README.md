@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Set up
+### Set up
 `yarn install`
 
-# Develop
+### Develop
 
 `yarn start`
 
